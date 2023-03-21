@@ -15,22 +15,27 @@ function Menu({language}) {
                 <ul className='menu-links'>
                     <li>
                         <Link className="menu-link" activeClass="active" duration={400} smooth={true} spy={true} to="home">
-                            {language === 'en' ? 'Home' : 'Accueil'}
+                            {language === 'en' ? 'HOME' : 'ACCUEIL'}
                         </Link>
                     </li>
                     <li>
-                        <Link className="menu-link" activeClass="active" duration={400} smooth={true} spy={true} to="about">
-                            {language === 'en' ? 'About' : 'A propos'}
+                        <Link className="menu-link" activeClass="active" duration={400} smooth={true} spy={true} to="skills">
+                            {language === 'en' ? 'SKILLS' : 'COMPETENCES'}
                         </Link>
                     </li>
                     <li>
                         <Link className="menu-link" activeClass="active" duration={400} smooth={true} spy={true} to="projects">
-                            {language === 'en' ? 'Projects' : 'Projets'}
+                            {language === 'en' ? 'PROJECTS' : 'PROJETS'}
                         </Link>
                     </li>
-                    <li >
+                    <li>
+                        <Link className="menu-link" activeClass="active" duration={400} smooth={true} spy={true} to="about">
+                            {language === 'en' ? 'ABOUT' : 'A PROPOS'}
+                        </Link>
+                    </li>
+                    <li>
                         <Link className="menu-link" activeClass="active" duration={400} smooth={true} spy={true} to="contact">
-                            Contact
+                            CONTACT
                         </Link>
                     </li>
                 </ul>

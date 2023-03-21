@@ -5,12 +5,14 @@
     width: 5rem;
     padding: 10rem 0rem;
     border-radius: 3rem;
+    // border: 2px solid var(--aquablue);
+    box-shadow: 0 0 7px var(--aquablue);
     z-index: 1;
-    background-color: var(--aquablue);
+    background-color: var(--dark);
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: slideup 1s ease 1s;
+    animation: slideup 1s ease 2.6s;
     animation-fill-mode: forwards;
     opacity: 0;
     z-index: 2;
@@ -18,15 +20,16 @@
     &--container {
         text-decoration: none;
         transform: rotate(90deg);
-        color: white;
+        color: var(--aquablue);
         font-size: 1.4rem;
         
         &:hover {
-            color: var(--dark);
-            transition: 0.5s ease;
+            color: white;
+            transition: 0.25s ease;
             cursor: pointer;
         }
     }
 
 }
+
 

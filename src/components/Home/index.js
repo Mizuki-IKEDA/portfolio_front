@@ -5,6 +5,11 @@ import PropTypes from 'prop-types';
 function Home({language}) {
     return (
         <div className="home" id="home">
+              {/* <div class="elements">
+                    <div class="square sq1"></div>
+                    <div class="square sq2"></div>
+                    <div class="square sq3"></div>
+                </div>  */}
             {language === 'en' ? 
                 <div className="home--container">
                     <h1 className='home--title'>
@@ -19,17 +24,19 @@ function Home({language}) {
                     <p className='home--paragraph'>
                         I'm a <span className='home--paragraph-dev'>fullstack developer</span> specialized in <span className='home--paragraph-dev'>ReactJS</span>.
                     </p>
-                    {/* <p className="home-paragraph2">
-                        I love building neat interfaces, web apps and everything in between.
-                    </p> */}
                     <div className="home--links" >
                         <Link activeClass="active" duration={400} smooth={true} spy={true} to="contact">
                             <span className="home--discover">Contact me</span>
                         </Link>
-                        <a href="/documents/CV_Mizuki_IKEDA_en.pdf" className="home--cv" target="_blank">Resume</a>
+                        <Link activeClass="active" duration={400} smooth={true} spy={true} to="projects">
+                            <span className="home--cv">Check my work</span>
+                        </Link>
                     </div>
                     <Link activeClass="active" duration={400} smooth={true} spy={true} to="about">
                         <img className="home--downarrow" src="/images/down_arrow_3.png" alt="down_arrow" />
+                    </Link>
+                    <Link activeClass="active" duration={400} smooth={true} spy={true} to="about">
+                        <div className="home--scroll">scroll down.</div>
                     </Link>
                 </div> :
                 <div className="home--container">
@@ -48,11 +55,15 @@ function Home({language}) {
                         <Link activeClass="active" duration={400} smooth={true} spy={true} to="contact">
                             <span className="home--discover">Contactez moi</span>
                         </Link>
-                        <a href="/documents/CV_Mizuki_IKEDA_en.pdf" className="home--cv" target="_blank">Mon CV</a>
+                        <Link activeClass="active" duration={400} smooth={true} spy={true} to="projects">
+                            <span className="home--cv">Mes projets</span>
+                        </Link>
+                        {/* <a href="/documents/CV_Mizuki_IKEDA_en.pdf" className="home--cv" target="_blank">Mon CV</a> */}
                     </div>
                     <Link activeClass="active" duration={400} smooth={true} spy={true} to="about">
                         <img className="home--downarrow" src="/images/down_arrow_3.png" alt="down_arrow" />
                     </Link>
+                    <div className="home--scroll">scroll down</div>
                </div> 
             }
         </div>

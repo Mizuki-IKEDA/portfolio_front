@@ -1,13 +1,15 @@
 .prolinks {
-    background-color: var(--aquablue);
+    background-color: var(--dark);
     position: fixed;
     bottom: 7rem;
     left: 1.9rem;
     z-index: 2;
     padding: 2rem 1rem;
     border-radius: 2rem;
+    // border: 2px solid var(--aquablue);
+    box-shadow: 0 0 7px var(--aquablue);
     transition: transform 0.3s translate(0px, 10px);
-    animation: slideup 1s ease-out 1s;
+    animation: slideup 1s ease-out 2.4s;
     animation-fill-mode: forwards;
     opacity: 0;
     
@@ -23,11 +25,12 @@
     &--logo {
         cursor: pointer;
         width: 30px;
-        filter: invert(100%) sepia(2%) saturate(94%) hue-rotate(217deg) brightness(116%) contrast(100%);
-
+        // dark: filter: invert(13%) sepia(26%) saturate(2051%) hue-rotate(164deg) brightness(92%) contrast(98%);
+        filter: invert(68%) sepia(38%) saturate(6047%) hue-rotate(141deg) brightness(98%) contrast(97%);
+        
         &:hover {
-            filter: invert(13%) sepia(26%) saturate(2051%) hue-rotate(164deg) brightness(92%) contrast(98%);
-            transition: 0.5s ease;
+            filter: invert(100%) sepia(2%) saturate(94%) hue-rotate(217deg) brightness(116%) contrast(100%);
+            transition: 0.25s ease;
         }
     }
 }

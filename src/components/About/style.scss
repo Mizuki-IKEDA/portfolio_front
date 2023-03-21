@@ -3,68 +3,73 @@
     height: 100vh;
     width: 100%;
     color: var(--dark);
-    display: flex;
-    align-items: center;
-    gap: 5%;
 
     &--container {
+        height: 100vh;
+        padding: 15% 15% 0;
         display: flex;
         flex-direction: column;
         align-items: center;
+        gap: 5rem;
+    }
+
+    &--words {
+        width: 58rem;
+        padding: auto 0;
+        display: flex;
         justify-content: center;
-        padding: 0 15%;
-        gap: 2rem;
-
-        &-words {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 5%;
-        }
-
+        align-items: center;
+        gap: 5%;
     }
     
     &--title {
         font-size: 3rem;
         color: var(--aquablue);
         opacity: 0;
-
-        &::before {
-            content: "";
-            position: absolute;
-            height: 2px;
-            width: 100%;
-            background-color: var(--aquablue);
-            left: 10px;
-            transform: scale(0, 1);
-            transition: transform 0.25s ease;
-            transform-origin: 0 100%;
-        }
-
-
+        height: 3rem;
     }
 
     &--paragraph {
         font-size: 1.2rem;
         line-height: 1.6;
-        opacity: 0;       
+        opacity: 0;   
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: baseline;
+        gap: 1rem;    
+    }
+
+    &--cv {
+        text-decoration: none;
+        border-radius: 5px;
+        border: 2px solid var(--aquablue);
+        font-weight: bold;
+        color: var(--aquablue);
+        width: 10rem;
+        margin: 0.5rem 0 0;
+        padding: 0.2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        background-color: var(--aquablue);
+        box-shadow: 0 0 10px var(--aquablue);
+
+        &:hover {
+            transition: 0.5s ease;
+            background-color: transparent;
+            color: var(--aquablue);
+        }
     }
 
     &--profil {
-        width: 25%;
+        border-radius: 10px;
+        width: 19rem;
         z-index: 1;
-        box-shadow: 0.5rem 0.5rem var(--aquablue), -0.5rem -0.5rem var(--pink);
         opacity: 0;
     }
 
-    &--motif {
-        height: 100vh;
-        position: absolute;
-        width: 100%;
-        top: 0rem;
-        right: 0rem;
-        opacity: 0.5;
-    }
 
 }
 

@@ -8,9 +8,9 @@
     background-color: var(--dark);
     
     &--container {
+        height: 100vh;
         padding: 0 15%;
         display: flex;
-        flex-direction: column;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -22,6 +22,7 @@
         color: var(--aquablue);
         z-index: 1;
         opacity: 0;
+        padding-bottom: 3rem;
     }
 
     &--projects {

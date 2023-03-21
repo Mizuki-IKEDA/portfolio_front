@@ -10,7 +10,7 @@ function Projects({ projects, language }) {
     return (
         <div className="projects" id="projects">
             <div className="projects--container">
-                <h1 ref={projectsRef} className={`${'projects--title'} ${projectsIsVisible ? 'animateFadein' : ''}`}>Projects</h1>
+                <h1 ref={projectsRef} className={`${'projects--title'} ${projectsIsVisible ? 'animateFadein' : ''}`}>PROJECTS</h1>
                 {projects && (
                     <section ref={projectsRef} className={`${'projects--projects'} ${projectsIsVisible ? 'animateFadeinDelay' : ''}`}>
                         {projects.map((project) => (
