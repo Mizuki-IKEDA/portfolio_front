@@ -32,10 +32,10 @@ function Home({language}) {
                             <span className="home--cv">Check my work</span>
                         </Link>
                     </div>
-                    <Link activeClass="active" duration={400} smooth={true} spy={true} to="about">
+                    <Link activeClass="active" duration={400} smooth={true} spy={true} to="skills">
                         <img className="home--downarrow" src="/images/down_arrow_3.png" alt="down_arrow" />
                     </Link>
-                    <Link activeClass="active" duration={400} smooth={true} spy={true} to="about">
+                    <Link activeClass="active" duration={400} smooth={true} spy={true} to="skills">
                         <div className="home--scroll">scroll down.</div>
                     </Link>
                 </div> :

@@ -19,28 +19,64 @@
         height: 3rem;
     }
 
-    &-items {
+    &-topics {
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 8rem;
-
-        &--skill {
-            cursor: pointer;
-            color: var(--aquablue);
-            font-size: 1.5rem;
-            font-weight: bold;
-            border-radius: 5px;
-            border: 2px solid var(--aquablue);
-            padding: 1rem;
-
-            &:hover {
-                transition: 0.25s ease;
-                color: white;
-                background-color: var(--aquablue);
-            }
-        }
-
     }
 
+    &-topic {
+        cursor: pointer;
+        color: var(--aquablue);
+        font-size: 1.5rem;
+        font-weight: bold;
+        border-radius: 5px;
+        border: 2px solid var(--aquablue);
+        padding: 1rem;
+
+        &:hover {
+            transition: 0.25s ease;
+            color: white;
+            background-color: var(--aquablue);
+        }
+    }
+
+    &-items {
+        width: 75%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    &-item {
+        width: 7rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+
+        &--logo {
+            width: 5rem;
+        }
+    }
+    
+}
+
+.selectedFront {
+    background-color: var(--aquablue);
+    color: white;
+}
+
+.selectedBack {
+    background-color: var(--aquablue);
+    color: white;
+}
+
+.selectedTools {
+    background-color: var(--aquablue);
+    color: white;
 }
