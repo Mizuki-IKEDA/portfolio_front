@@ -26,13 +26,14 @@ function Skills({language}) {
     <div className="skills">
       <div className="skills-container">
         <h1 ref={aboutRef} className={`${"skills-title"} ${aboutIsVisible ? "animateFadein" : ""}`}>SKILLS</h1>
-          <ul className="skills-topics">
-            <li className="skills-topic" onClick={handleClickFront}>FRONT</li>
-            <li className="skills-topic" onClick={handleClickBack}>BACK</li>
-            <li className="skills-topic" onClick={handleClickTools}>TOOLS</li>
-          </ul>
-          {show ==="front" && 
-            <ul className="skills-items">
+        <ul className="skills-topics">
+          <li className="skills-topic" onClick={handleClickFront}>FRONT</li>
+          <li className="skills-topic" onClick={handleClickBack}>BACK</li>
+          <li className="skills-topic" onClick={handleClickTools}>TOOLS</li>
+        </ul>
+        {show ==="front" && 
+          <div className="skills-items">
+            <ul className="skills-items--row">
               <li className="skills-item">
                 <img src="/images/html-5.png" className="skills-item--logo" alt="html5"/>
                 <p className="skills-item--name">HTML5</p>
@@ -46,12 +47,14 @@ function Skills({language}) {
                 <p className="skills-item--name">Sass</p>
               </li>
               <li className="skills-item">
-                <img src="/images/js.png" className="skills-item--logo" alt="js"/>
-                <p className="skills-item--name">JavaScript</p>
-              </li>
-              <li className="skills-item">
                 <img src="/images/tailwindcss-icon.svg" className="skills-item--logo" alt="tailwind"/>
                 <p className="skills-item--name">Tailwind</p>
+              </li>
+            </ul>
+            <ul className="skills-items--row">
+              <li className="skills-item">
+                <img src="/images/js.png" className="skills-item--logo" alt="js"/>
+                <p className="skills-item--name">JavaScript</p>
               </li>
               <li className="skills-item">
                 <img src="/images/atom.png" className="skills-item--logo" alt="react"/>
@@ -62,9 +65,11 @@ function Skills({language}) {
                 <p className="skills-item--name">Redux</p>
               </li>
             </ul>
-          }
-          {show ==="back" && 
-            <ul className="skills-items">
+          </div>
+        }
+        {show ==="back" && 
+          <div className="skills-items">
+            <ul className="skills-items--row">
               <li className="skills-item">
                 <img src="/images/nodejs-horizontal.svg" className="skills-item--logo" alt="node"/>
                 <p className="skills-item--name">NodeJS</p>
@@ -77,6 +82,8 @@ function Skills({language}) {
                 <img src="/images/sequelizejs-icon.svg" className="skills-item--logo" alt="sequelize"/>
                 <p className="skills-item--name">Sequelize</p>
               </li>
+            </ul>
+            <ul className="skills-items--row">
               <li className="skills-item">
                 <img src="/images/postgresql-icon.svg" className="skills-item--logo" alt="postgresql"/>
                 <p className="skills-item--name">PostgreSQL</p>
@@ -90,9 +97,11 @@ function Skills({language}) {
                 <p className="skills-item--name">MongoDB</p>
               </li>
             </ul>
-          }
-          {show ==="tools" && 
-            <ul className="skills-items">
+          </div>
+        }
+        {show ==="tools" && 
+          <div className="skills-items">
+            <ul className="skills-items--row">
               <li className="skills-item">
                 <img src="/images/agile.png" className="skills-item--logo" alt="agile"/>
                 <p className="skills-item--name">Agile</p>
@@ -113,6 +122,8 @@ function Skills({language}) {
                 <img src="/images/jestjsio-icon.svg" className="skills-item--logo" alt="jest"/>
                 <p className="skills-item--name">Jest</p>
               </li>    
+            </ul>
+            <ul className="skills-items--row">
               <li className="skills-item">
                 <img src="/images/heroku-icon.svg" className="skills-item--logo" alt="heroku"/>
                 <p className="skills-item--name">Heroku</p>
@@ -130,7 +141,8 @@ function Skills({language}) {
                 <p className="skills-item--name">Axios</p>
               </li>
             </ul>
-          }
+          </div>
+        }
       </div>
     </div>
   )
