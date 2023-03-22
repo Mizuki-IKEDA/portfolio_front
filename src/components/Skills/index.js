@@ -61,14 +61,6 @@ function Skills({language}) {
                 <img src="/images/redux.svg" className="skills-item--logo" alt="redux"/>
                 <p className="skills-item--name">Redux</p>
               </li>
-              <li className="skills-item">
-                <img src="/images/socketio-icon.svg" className="skills-item--logo" alt="socketio"/>
-                <p className="skills-item--name">Socketio</p>
-              </li>
-              <li className="skills-item">
-                <img src="/images/axios-icon.svg" className="skills-item--logo" alt="axios"/>
-                <p className="skills-item--name">Axios</p>
-              </li>
             </ul>
           }
           {show ==="back" && 
@@ -101,8 +93,42 @@ function Skills({language}) {
           }
           {show ==="tools" && 
             <ul className="skills-items">
-              <img src="" className="skills-item"/>
-              Agile, Git, GitHub, WebPack, Babel, Jest, Heroku, Netlify, VSCode
+              <li className="skills-item">
+                <img src="/images/agile.png" className="skills-item--logo" alt="agile"/>
+                <p className="skills-item--name">Agile</p>
+              </li>
+              <li className="skills-item">
+                <img src="/images/git-scm-icon.svg" className="skills-item--logo" alt="git"/>
+                <p className="skills-item--name">Git</p>
+              </li>
+              <li className="skills-item">
+                <img src="/images/icons8-github-64.png" className="skills-item--logo" alt="github"/>
+                <p className="skills-item--name">GitHub</p>
+              </li>        
+              <li className="skills-item">
+                <img src="/images/js_webpack-icon.svg" className="skills-item--logo" alt="webpack"/>
+                <p className="skills-item--name">Webpack</p>
+              </li>        
+              <li className="skills-item">
+                <img src="/images/jestjsio-icon.svg" className="skills-item--logo" alt="jest"/>
+                <p className="skills-item--name">Jest</p>
+              </li>    
+              <li className="skills-item">
+                <img src="/images/heroku-icon.svg" className="skills-item--logo" alt="heroku"/>
+                <p className="skills-item--name">Heroku</p>
+              </li>    
+              <li className="skills-item">
+                <img src="/images/netlify-icon.svg" className="skills-item--logo" alt="netlify"/>
+                <p className="skills-item--name">Netlify</p>
+              </li>                        
+              <li className="skills-item">
+                <img src="/images/socketio-icon.svg" className="skills-item--logo" alt="socketio"/>
+                <p className="skills-item--name">Socketio</p>
+              </li>
+              <li className="skills-item">
+                <img src="/images/axios-icon.svg" className="skills-item--logo" alt="axios"/>
+                <p className="skills-item--name">Axios</p>
+              </li>
             </ul>
           }
       </div>
