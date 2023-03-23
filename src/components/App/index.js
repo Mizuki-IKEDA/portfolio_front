@@ -33,11 +33,11 @@ function App() {
           <Menu language={language} />
           <ProLinks />
           <Mail />
-          <Home className="app--snap-element" language={language} />
-          <Skills className="app--snap-element" language={language} />
-          <Projects className="app--snap-element" projects={projects} language={language} />
-          <About className="app--snap-element" language={language} />
-          <Contact className="app--snap-element" language={language} />
+          <Home language={language} />
+          <Skills language={language} />
+          <Projects projects={projects} language={language} />
+          <About language={language} />
+          <Contact language={language} />
         </div>
   );
 }

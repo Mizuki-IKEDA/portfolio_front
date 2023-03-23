@@ -50,12 +50,12 @@
         justify-content: center;
         align-items: center;
         gap: 2rem;
-
+        
         &--row {
             display: flex;
         }
     }
-
+    
     &-item {
         width: 7rem;
         display: flex;
@@ -63,6 +63,9 @@
         justify-content: center;
         align-items: center;
         gap: 0.5rem;
+        animation: home 0.5s ease-out;
+        animation-fill-mode: forwards;
+        opacity: 0;
 
         &--logo {
             width: 5rem;
@@ -71,7 +74,7 @@
     
 }
 
-.selectedFront {
+.selected {
     background-color: var(--aquablue);
     color: white;
 }
