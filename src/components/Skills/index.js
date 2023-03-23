@@ -11,23 +11,32 @@ function Skills({language}) {
   const [show, setShow] = useState("");
 
   const handleClickFront = (event) => {
-    event.target.className="skills-topic selected";
-    document.querySelector("#back").className="skills-topic";
-    document.querySelector("#tools").className="skills-topic";
+    event.target.className="skills-topic--title selected";
+    document.querySelector("#back").className="skills-topic--title";
+    document.querySelector("#tools").className="skills-topic--title";
+    document.querySelector("#front-image").style.display = "none";
+    document.querySelector("#back-image").style.display = "none";
+    document.querySelector("#tools-image").style.display = "none";
     setShow("front");
   };
 
   const handleClickBack = (event) => {
-    event.target.className="skills-topic selected";
-    document.querySelector("#front").className="skills-topic";
-    document.querySelector("#tools").className="skills-topic";
+    event.target.className="skills-topic--title selected";
+    document.querySelector("#front").className="skills-topic--title";
+    document.querySelector("#tools").className="skills-topic--title";
+    document.querySelector("#front-image").style.display = "none";
+    document.querySelector("#back-image").style.display = "none";
+    document.querySelector("#tools-image").style.display = "none";
     setShow("back");
   };
 
   const handleClickTools = (event) => {
-    event.target.className="skills-topic selected";
-    document.querySelector("#back").className="skills-topic";
-    document.querySelector("#front").className="skills-topic";
+    event.target.className="skills-topic--title selected";
+    document.querySelector("#back").className="skills-topic--title";
+    document.querySelector("#front").className="skills-topic--title";
+    document.querySelector("#front-image").style.display = "none";
+    document.querySelector("#back-image").style.display = "none";
+    document.querySelector("#tools-image").style.display = "none";
     setShow("tools");
   };
 
@@ -36,9 +45,18 @@ function Skills({language}) {
       <div className="skills-container">
         <h1 ref={aboutRef} className={`${"skills-title"} ${aboutIsVisible ? "animateFadein" : ""}`}>SKILLS</h1>
         <ul className="skills-topics">
-          <li ref={aboutRef} id="front" className={`${"skills-topic"} ${aboutIsVisible ? "animateFadein" : ""}`} onClick={handleClickFront} style={{animationDelay: "0.1s"}}>FRONT</li>
-          <li ref={aboutRef} id="back" className={`${"skills-topic"} ${aboutIsVisible ? "animateFadein" : ""}`} onClick={handleClickBack} style={{animationDelay: "0.2s"}}>BACK</li>
-          <li ref={aboutRef} id="tools" className={`${"skills-topic"} ${aboutIsVisible ? "animateFadein" : ""}`} onClick={handleClickTools} style={{animationDelay: "0.3s"}}>TOOLS</li>
+          <li className="skills-topic">
+            <div ref={aboutRef} id="front" className={`${"skills-topic--title"} ${aboutIsVisible ? "animateFadein" : ""}`} onClick={handleClickFront} style={{animationDelay: "0.1s"}}>FRONT</div>
+            <img id="front-image" className="skills-topic--image" src="/images/frontend.png" alt="frontend" />
+          </li>
+          <li className="skills-topic">
+            <div ref={aboutRef} id="back" className={`${"skills-topic--title"} ${aboutIsVisible ? "animateFadein" : ""}`} onClick={handleClickBack} style={{animationDelay: "0.2s"}}>BACK</div>
+            <img id="back-image" className="skills-topic--image" src="/images/backend.png" alt="backend" />
+          </li>
+          <li className="skills-topic">
+            <div ref={aboutRef} id="tools" className={`${"skills-topic--title"} ${aboutIsVisible ? "animateFadein" : ""}`} onClick={handleClickTools} style={{animationDelay: "0.3s"}}>TOOLS</div>
+            <img id="tools-image" className="skills-topic--image" src="/images/tools.png" alt="tools" />
+          </li>
         </ul>
         {show ==="front" && 
           <div className="skills-items">

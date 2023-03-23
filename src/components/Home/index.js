@@ -11,7 +11,7 @@ function Home({language}) {
                     <div class="square sq3"></div>
                 </div>  */}
             {language === 'en' ? 
-                <div className="home--container">
+                <><div className="home--container">
                     <h1 className='home--title'>
                         <span className="home--title-hi">
                             Hi, my name is <br></br>
@@ -24,7 +24,7 @@ function Home({language}) {
                     <p className='home--paragraph'>
                         I'm a <span className='home--paragraph-dev'>fullstack developer</span> specialized in <span className='home--paragraph-dev'>ReactJS</span>.
                     </p>
-                    <div className="home--links" >
+                    <div className="home--links">
                         <Link activeClass="active" duration={400} smooth={true} spy={true} to="contact">
                             <span className="home--discover">Contact me</span>
                         </Link>
@@ -35,10 +35,10 @@ function Home({language}) {
                     <Link activeClass="active" duration={400} smooth={true} spy={true} to="skills">
                         <img className="home--downarrow" src="/images/down_arrow_3.png" alt="down_arrow" />
                     </Link>
-                    <Link activeClass="active" duration={400} smooth={true} spy={true} to="skills">
-                        <div className="home--scroll">scroll down.</div>
-                    </Link>
-                </div> :
+                </div>
+                <Link activeClass="active" duration={400} smooth={true} spy={true} to="skills" className="home--scroll">
+                    <div className="home--scroll-item">scroll down.</div>
+                </Link></>:
                 <div className="home--container">
                     <h1 className='home--title'>
                         <span className="home--title-hi">

@@ -28,18 +28,26 @@
     }
 
     &-topic {
-        cursor: pointer;
-        color: var(--aquablue);
-        font-size: 1.5rem;
-        font-weight: bold;
-        border-radius: 5px;
-        border: 2px solid var(--aquablue);
-        padding: 1rem;
 
-        &:hover {
-            transition: 0.25s ease;
-            color: white;
-            background-color: var(--aquablue);
+        &--title {
+            cursor: pointer;
+            color: var(--aquablue);
+            font-size: 1.5rem;
+            font-weight: bold;
+            border-radius: 5px;
+            border: 2px solid var(--aquablue);
+            padding: 1rem;
+            
+            &:hover {
+                transition: 0.25s ease;
+                color: white;
+                background-color: var(--aquablue);
+            }
+        }
+
+
+        &--image {
+            width: 8rem;
         }
     }
 
