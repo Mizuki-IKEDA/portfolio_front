@@ -98,11 +98,11 @@ function Skills({language}) {
           <div className="skills-items">
             <ul className="skills-items--row">
               <li className="skills-item">
-                <img src="/images/nodejs-horizontal.svg" className="skills-item--logo" alt="node"/>
+                <img src="/images/nodejs-horizontal.svg" className="skills-item--logo" alt="node" style={{paddingTop: "1.5rem"}}/>
                 <p className="skills-item--name">NodeJS</p>
               </li>
               <li className="skills-item" style={{animationDelay: "0.1s"}}>
-                <img src="/images/express-seeklogo.com.svg" className="skills-item--logo" alt="express"/>
+                <img src="/images/express-seeklogo.com.svg" className="skills-item--logo" alt="express" style={{paddingTop: "2rem"}}/>
                 <p className="skills-item--name">ExpressJS</p>
               </li>
               <li className="skills-item" style={{animationDelay: "0.2s"}}>

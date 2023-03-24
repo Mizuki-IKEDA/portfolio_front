@@ -28,6 +28,11 @@
     }
 
     &-topic {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
 
         &--title {
             cursor: pointer;
@@ -37,17 +42,19 @@
             border-radius: 5px;
             border: 2px solid var(--aquablue);
             padding: 1rem;
-            
+
             &:hover {
                 transition: 0.25s ease;
                 color: white;
                 background-color: var(--aquablue);
+                box-shadow: 0 0 5px var(--aquablue);
             }
         }
 
 
         &--image {
-            width: 8rem;
+            width: 5rem;
+            filter: invert(13%) sepia(26%) saturate(2051%) hue-rotate(164deg) brightness(92%) contrast(98%);
         }
     }
 
@@ -61,6 +68,7 @@
         
         &--row {
             display: flex;
+            gap: 3rem;
         }
     }
     
@@ -68,7 +76,7 @@
         width: 7rem;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
         gap: 0.5rem;
         animation: home 0.5s ease-out;
@@ -85,14 +93,6 @@
 .selected {
     background-color: var(--aquablue);
     color: white;
+    box-shadow: 0 0 5px var(--aquablue);
 }
 
-.selectedBack {
-    background-color: var(--aquablue);
-    color: white;
-}
-
-.selectedTools {
-    background-color: var(--aquablue);
-    color: white;
-}
