@@ -47,15 +47,15 @@ function Skills({language}) {
         <ul className="skills-topics">
           <li className="skills-topic">
             <div ref={aboutRef} id="front" className={`${"skills-topic--title"} ${aboutIsVisible ? "animateFadein" : ""}`} onClick={handleClickFront} style={{animationDelay: "0.1s"}}>FRONT</div>
-            <img id="front-image" className="skills-topic--image" src="/images/frontend.png" alt="frontend" />
+            <img id="front-image" className="skills-topic--image" src="/images/frontend.png" onClick={handleClickFront} alt="frontend" />
           </li>
           <li className="skills-topic">
             <div ref={aboutRef} id="back" className={`${"skills-topic--title"} ${aboutIsVisible ? "animateFadein" : ""}`} onClick={handleClickBack} style={{animationDelay: "0.2s"}}>BACK</div>
-            <img id="back-image" className="skills-topic--image" src="/images/backend.png" alt="backend" />
+            <img id="back-image" className="skills-topic--image" src="/images/backend.png" onClick={handleClickBack} alt="backend" />
           </li>
           <li className="skills-topic">
             <div ref={aboutRef} id="tools" className={`${"skills-topic--title"} ${aboutIsVisible ? "animateFadein" : ""}`} onClick={handleClickTools} style={{animationDelay: "0.3s"}}>TOOLS</div>
-            <img id="tools-image" className="skills-topic--image" src="/images/tools.png" alt="tools" />
+            <img id="tools-image" className="skills-topic--image" src="/images/tools.png" onClick={handleClickTools} alt="tools" />
           </li>
         </ul>
         {show ==="front" && 

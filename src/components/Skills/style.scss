@@ -54,7 +54,13 @@
 
         &--image {
             width: 5rem;
+            cursor: pointer;
             filter: invert(13%) sepia(26%) saturate(2051%) hue-rotate(164deg) brightness(92%) contrast(98%);
+
+            &:hover {
+                transition: 0.5s ease;
+                filter: invert(68%) sepia(38%) saturate(6047%) hue-rotate(141deg) brightness(98%) contrast(97%);
+            }
         }
     }
 
@@ -85,6 +91,10 @@
 
         &--logo {
             width: 5rem;
+        }
+
+        &-name {
+            color: var(--dark);
         }
     }
     
