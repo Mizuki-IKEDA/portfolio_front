@@ -13,6 +13,10 @@
     animation-fill-mode: forwards;
     opacity: 0;
     
+    &:hover {
+        transition: 0.25s ease;
+        background-color: var(--aquablue);
+    }
 
     &--container {
         display: flex;
@@ -20,17 +24,18 @@
         justify-content: center;
         align-items: center;
         gap: 2rem;
+
     }
 
     &--logo {
         cursor: pointer;
         width: 30px;
-        // dark: filter: invert(13%) sepia(26%) saturate(2051%) hue-rotate(164deg) brightness(92%) contrast(98%);
-        filter: invert(68%) sepia(38%) saturate(6047%) hue-rotate(141deg) brightness(98%) contrast(97%);
+        filter: invert(100%) sepia(2%) saturate(94%) hue-rotate(217deg) brightness(116%) contrast(100%);
         
         &:hover {
-            filter: invert(100%) sepia(2%) saturate(94%) hue-rotate(217deg) brightness(116%) contrast(100%);
             transition: 0.25s ease;
+            filter: invert(13%) sepia(26%) saturate(2051%) hue-rotate(164deg) brightness(92%) contrast(98%);
+            // filter: invert(68%) sepia(38%) saturate(6047%) hue-rotate(141deg) brightness(98%) contrast(97%);
         }
     }
 }

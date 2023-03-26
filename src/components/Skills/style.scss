@@ -17,7 +17,6 @@
         margin-bottom: 1rem;
         color: var(--aquablue);
         opacity: 0;
-        height: 3rem;
     }
 
     &-topics {
@@ -41,6 +40,7 @@
             font-weight: bold;
             border-radius: 5px;
             border: 2px solid var(--aquablue);
+            box-shadow: 0 0 10px var(--aquablue);
             padding: 1rem;
 
             &:hover {

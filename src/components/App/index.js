@@ -17,7 +17,6 @@ function App() {
   const dispatch = useDispatch();
   const projects = useSelector(selectProjects);
   const projectsStatus = useSelector(getProjectsStatus);
-  const error = useSelector(getProjectsError);
   
   useEffect(() => {
     if (projectsStatus === 'idle') {

@@ -52,14 +52,14 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        color: white;
-        background-color: var(--aquablue);
+        color: var(--aquablue);
+        background-color: transparent;
         box-shadow: 0 0 10px var(--aquablue);
-
+        
         &:hover {
             transition: 0.5s ease;
-            background-color: transparent;
-            color: var(--aquablue);
+            color: white;
+            background-color: var(--aquablue);
         }
     }
 
