@@ -20,7 +20,7 @@
     &--title {        
         opacity: 0;
         animation: home 0.75s ease;
-        animation-delay: 1.5s;
+        animation-delay: 1s;
         animation-fill-mode: forwards;
 
         &-hi {
@@ -43,7 +43,7 @@
         width: 100%;
         line-height: 1.6;
         animation: home 0.75s ease-out;
-        animation-delay: 1.7s;
+        animation-delay: 1.2s;
         animation-fill-mode: forwards;
         opacity: 0;
 
@@ -58,7 +58,7 @@
         align-items: center;
         gap: 2rem;
         animation: home 0.75s ease-out;
-        animation-delay: 2s;
+        animation-delay: 1.4s;
         animation-fill-mode: forwards;
         opacity: 0;
         z-index: 1;
@@ -116,7 +116,7 @@
         filter: invert(68%) sepia(78%) saturate(4749%) hue-rotate(146deg) brightness(104%) contrast(97%);
         cursor: pointer;
         animation: animate 2s linear infinite;
-        animation-delay: 2.4s;
+        animation-delay: 1.6s;
         animation-fill-mode: forwards;
         opacity: 0;
 
@@ -133,7 +133,7 @@
         color: var(--aquablue);
         cursor: pointer;
         animation: home 0.4s ease;
-        animation-delay: 2.4s;
+        animation-delay: 1.6s;
         animation-fill-mode: forwards;
         opacity: 0;
         display: flex;

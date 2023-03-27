@@ -6,16 +6,19 @@
     z-index: 3;
     
     &--container {
+        border-radius: 10px;
+        box-shadow: 0 0 10px var(--dark);
         background-color: white;
         width: 29rem;
         height: 35rem;
         display: flex;
         flex-direction: column;
         gap: 1.5rem;
-
+        
     }
-
+    
     &--image {
+        border-radius: 10px 10px 0 0;
         width: 100%;
         height: 45%;
     }
@@ -51,11 +54,14 @@
 
     &--link-container {
         text-decoration: none;
-        color: var(--pink);
     }
-
+    
     &--link {
-        border: solid 1px;
+        color: var(--aquablue);
+        border: solid 2px var(--aquablue);
+        border-radius: 10px;
+        box-shadow: 0 0 5px var(--aquablue);
+        font-weight: bold;
         padding: 1em 1.5em;
         margin: 0 0 1em;
         display: flex;

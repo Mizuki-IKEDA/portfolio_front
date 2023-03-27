@@ -9,24 +9,33 @@ function Project({
     description,
     technology,
     link,
-    done,
-    language
+    // done,
+    // language
 }) {
-    const [show, setShow] = useState(false);
+    // const [show, setShow] = useState(false);
     return (
         <div className="project">
-            <img src={thumbnail} className="project--image" alt={title} />
-            <div className="project--container">
-                <h3 className="project--title">{title}</h3>
-                <p className="project--description">
-                    {technology}
-                </p>
-                <span onClick={() => setShow(true)} className="project--link">{language === 'en' ? 'Learn more' : 'Détails'}</span>
-            </div>
-            <Modal onClose={() => setShow(false)} show={show} title={title} subtitle={subtitle} description={description} link={link} thumbnail={thumbnail} done={done} language={language} />
+                <img src={thumbnail} className="project-image" alt={title} />
+                <div className="project-text">
+                    <h3 className="project-title">{title}</h3>
+                    <h4 className="project-subtitle">{subtitle}</h4>
+                    <p className="project-description">{description}</p>
+                    <p className="project-technology">{technology}</p>
+                    <div className="project-links">
+                        <a href="https://github.com/O-clock-Flamel/projet-07-tinder-du-sportif-front" target="_blank">
+                            <img className="project-links--img" src="/images/logo_github.png" alt="link-github" />
+                        </a>
+                        <a href={link} target="_blank">
+                            <img className="project-links--img" src="/images/external-link.svg" alt="link-site" />
+                        </a>
+                    </div>
+                </div>
+            {/* <Modal onClose={() => setShow(false)} show={show} title={title} subtitle={subtitle} description={description} link={link} thumbnail={thumbnail} done={done} language={language} /> */}
         </div>
     )
 }
+
+// onClick={() => setShow(true)} 
 
 Project.propTypes = {
     thumbnail: PropTypes.string.isRequired,
