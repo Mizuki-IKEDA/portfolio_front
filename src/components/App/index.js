@@ -1,6 +1,6 @@
-import { useEffect, useRef } from "react";
+import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { selectProjects, getProjectsError, getProjectsStatus, fetchProjects} from "../../reducers/projectReducer";
+import { selectProjects, getProjectsStatus, fetchProjects} from "../../reducers/projectReducer";
 import About from '../About';
 import Contact from '../Contact';
 import Home from '../Home';
