@@ -12,7 +12,7 @@ export const fetchProjects = createAsyncThunk(
     async () => {
         try {
             const response = await axios.get(
-                "http://localhost:3001/projects"
+                "https://porfoliobackmizulicous-mizulicious.b4a.run/projects"
             );
             return [...response.data];
         } catch (error) {
