@@ -9,10 +9,7 @@ function Project({
     description,
     technology,
     link,
-    // done,
-    // language
 }) {
-    // const [show, setShow] = useState(false);
     return (
         <div className="project">
                 <img src={thumbnail} className="project-image" alt={title} />
