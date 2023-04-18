@@ -6,7 +6,6 @@
     z-index: 2;
     padding: 2rem 1rem;
     border-radius: 2rem;
-    // border: 2px solid var(--aquablue);
     box-shadow: 0 0 7px var(--aquablue);
     transition: transform 0.3s translate(0px, 10px);
     animation: slideup 1s ease-out 1.7s;
@@ -38,4 +37,8 @@
             // filter: invert(68%) sepia(38%) saturate(6047%) hue-rotate(141deg) brightness(98%) contrast(97%);
         }
     }
+}
+
+@media only screen and (max-width: 1000px) {
+
 }
