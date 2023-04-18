@@ -3,16 +3,26 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-scroll';
 import { toggleLanguage } from '../../reducers/languageReducer';
 import { useDispatch } from 'react-redux';
+import { useState } from 'react';
 
 function Menu({language}) {
     const dispatch = useDispatch();
+    const [showNavbar, setShowNavbar] = useState(false);
+    const handleShowNavbar = () => {
+        setShowNavbar(!showNavbar);
+    };
+    console.log(showNavbar);
+
     return (
         <nav className="menu">
-            <div className="menu--container">
+            <div className="menu-container">
                 <div className="menu-home">
                     <Link className="menu-square" activeClass="active" duration={400} smooth={true} spy={true} to="home">M</Link>
                 </div>
-                <ul className='menu-links'>
+                <div className="menu-logo" onClick={handleShowNavbar}>
+                    <img className="menu-logo--img" src="/images/menu-logo.svg" />
+                </div>
+                <ul className={`menu-links ${showNavbar && 'menu-active'}`}>
                     <li>
                         <Link className="menu-link" activeClass="active" duration={400} smooth={true} spy={true} to="home">
                             {language === 'en' ? 'HOME' : 'ACCUEIL'}

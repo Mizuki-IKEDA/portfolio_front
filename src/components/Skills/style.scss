@@ -42,7 +42,7 @@
             border: 2px solid var(--aquablue);
             box-shadow: 0 0 10px var(--aquablue);
             padding: 1rem;
-
+            
             &:hover {
                 transition: 0.25s ease;
                 color: white;
@@ -54,6 +54,7 @@
 
         &--image {
             width: 5rem;
+            opacity: 0;
             cursor: pointer;
             filter: invert(13%) sepia(26%) saturate(2051%) hue-rotate(164deg) brightness(92%) contrast(98%);
 

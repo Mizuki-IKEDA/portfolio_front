@@ -6,11 +6,12 @@
     animation: slidedown 1s ease;
     box-shadow: 0 0 10px var(--aquablue);
     
-    &--container {
+    &-container {
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 1.5em 2.5em;
+        position: relative;
     }
     
     &-square {
@@ -41,6 +42,16 @@
             background-color: var(--aquablue);
         }
 
+    }
+
+    &-logo {
+        display: none;
+        
+        &--img {
+            width: 40px;
+            height: 40px;
+            filter: invert(100%) sepia(2%) saturate(94%) hue-rotate(217deg) brightness(116%) contrast(100%);
+        }
     }
     
     &-links {
@@ -129,6 +140,64 @@
             background-color: var(--aquablue);
             color: var(--dark);
         }
+    }
+
+}
+
+@media only screen and (max-width: 1200px) {
+
+    .menu {
+        &-links {
+            gap: 2rem;
+        }
+        
+        &-link {
+            font-size: 1rem;
+        }
+        
+    }
+}
+
+@media only screen and (max-width: 800px) {
+
+    .menu {
+        
+        &-container {
+            padding: 2em 2.5em;
+        }
+
+        &-square {
+            width: 50px;
+            height: 50px;
+        }
+
+        &-logo {
+            position: absolute;
+            top: 30px;
+            left: 113px;
+            display: block;
+            cursor: pointer;
+        }
+
+        &-links{
+            position: absolute;
+            flex-direction: column;
+            top: -338px;
+            left: 90px;
+            background-color: var(--dark);
+            padding: 2rem;
+            border-bottom-left-radius: 30px;
+            border-bottom-right-radius: 30px;
+
+            &.menu-active {
+                top: 90px;
+            }
+        }
+        
+        &-link {
+            font-size: 2rem;
+        }
+
     }
 
 }
