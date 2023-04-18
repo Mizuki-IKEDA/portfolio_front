@@ -38,7 +38,13 @@
 @media only screen and (max-width: 1000px) {
 
     .mail {
+        right: 1rem;
+        width: 3rem;
+        padding: 7rem 0rem;
 
+        &--container {
+            font-size: 1rem;
+        }
     }
 }
 
