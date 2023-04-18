@@ -40,5 +40,15 @@
 }
 
 @media only screen and (max-width: 1000px) {
+    .prolinks {
+        left: 1rem;
+        padding: 1.2rem 0.8rem;
 
+        &--container {
+            gap: 1rem;
+        }
+        &--logo {
+            width: 20px;
+        }
+    }
 }
