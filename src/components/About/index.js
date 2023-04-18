@@ -17,7 +17,7 @@ function About({language}) {
                             <p>After 10 years as an industrial engineer, I took a leap and trained in web and mobile app development at O'Clock school.</p>
                             <p>I quickly found enjoyment in bringing ambitious ideas to fruition and a positive attitude to every challenge.</p>
                             <p>Being a child of 2 japanese parents but born and raised in France, I strive in cultural diversity and am looking for collaborative and dynamic environments.</p>
-                            <a href="/documents/CV_Mizuki_IKEDA_en.pdf" className="about--cv" target="_blank">Resume</a>
+                            <a href="/documents/CV_IKEDA_en.pdf" className="about--cv" target="_blank">Resume</a>
                         </div>
                     </div>
                 </div> :
@@ -25,10 +25,10 @@ function About({language}) {
                     <h1 ref={aboutRef} className={`${'about--title'} ${aboutIsVisible ? 'animateFadein' : ''}`}>A propos</h1>
                     <div className="about--words">
                         <div ref={aboutRef} className={`${'about--paragraph'} ${aboutIsVisible ? 'animateFadeinDelay' : ''}`}>
-                            <p>Après 10 ans en tant qu'ingénieur projet dans l'industrie des matériaux, je me suis reconverti dans le développement web pour poursuivre ma passion dans le code.</p>
-                            <p>Mes expériences passées ont pu m'apporter une structure et des méthodes pour manager des projets de la conception à la mise en place.</p>
-                            <p>Issu de 2 parents immigrés japonais, je m'épanouis dans les environnements multi-culturelles.
-                            Je serais ravi de participer à vos prochains projets !</p>
+                            <p>Après 10 ans en tant qu'ingénieur projet en industrie, je me suis reconverti dans le développement web en me formant chez O'Clock.</p>
+                            <p>J'ai immédiatement trouvé mon cocon, et je prends aujourd'hui du plaisir à créer des applications et apprendre des autres.</p>
+                            <p>Issu de 2 parents immigrés japonais, je m'épanouis dans les environnements multi-culturelles et dynamiques.</p>
+                            <a href="/documents/CV_IKEDA_fr.pdf" className="about--cv" target="_blank">Mon CV</a>
                         </div>
                         <img ref={aboutRef} className={`${'about--profil'} ${aboutIsVisible ? 'animateFadein' : ''}`} src="/images/photo_profil.jpg" alt="profil" />
                     </div>

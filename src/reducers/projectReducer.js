@@ -1,5 +1,6 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
+import { host } from '../constant';
 
 const initialState = {
     projects:[],
@@ -12,7 +13,7 @@ export const fetchProjects = createAsyncThunk(
     async () => {
         try {
             const response = await axios.get(
-                "https://porfoliobackmizulicous-mizulicious.b4a.run/projects"
+                host+"/projects"
             );
             return [...response.data];
         } catch (error) {
