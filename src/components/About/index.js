@@ -8,6 +8,7 @@ function About({language}) {
     });
     return (
         <div className="about" id="about">
+            <div className="about--separator"></div>
             {language === 'en' ? 
                 <div className="about--container">
                     <h1 ref={aboutRef} className={`${'about--title'} ${aboutIsVisible ? 'animateFadein' : ''}`}>ABOUT</h1>

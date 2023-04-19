@@ -4,6 +4,16 @@
     width: 100%;
     color: var(--dark);
 
+    &--separator {
+        position: absolute;
+        top: 0;
+        width: 0;
+        height: 0;
+        border-top: none;
+        border-right: 99vw solid var(--dark);
+        border-bottom: 10vw solid #fff;
+    }
+
     &--container {
         height: 100vh;
         padding: 15% 15% 0;

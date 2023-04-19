@@ -31,6 +31,7 @@ function Contact({language}) {
 
     return (
         <div className="contact" id="contact">
+            <div className="contact--separator"></div>
             {language === 'en' ? 
             <div className="contact--container">
                 <h1 ref={contactRef} className={`${'contact--title'} ${contactIsVisible ? 'animateFadein' : ''}`}>CONTACT</h1>
