@@ -9,6 +9,7 @@ function Projects({ projects, language }) {
     });
     return (
         <div className="projects" id="projects">
+            <div className="projects--separator"></div>
             <div className="projects--container">
                 <h1 ref={projectsRef} className={`${'projects--title'} ${projectsIsVisible ? 'animateFadein' : ''}`}>{language === 'en' ? 'PROJECTS' : 'PROJETS'}</h1>
                 {projects && (
