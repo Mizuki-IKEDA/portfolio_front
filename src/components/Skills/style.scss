@@ -110,8 +110,9 @@
 @media only screen and (max-width: 1000px) {
 
     .skills {
-
+        height: auto;
         &-title {
+            padding-top: 3rem;
             font-size: 2rem;
         }
 
@@ -133,6 +134,7 @@
 
             &--row {
                 flex-direction: column;
+                gap: 1rem;
             }
 
             flex-direction: row;
@@ -143,6 +145,10 @@
 
             &--logo {
                 width: 2.5rem;
+            }
+
+            &--name {
+                font-size: 0.8rem;
             }
         }
     }
