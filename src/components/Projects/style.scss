@@ -2,13 +2,14 @@
     position: relative;
     width: 100%;
     background-color: var(--dark);
+    overflow-x: hidden;
     
     &--separator {
         position: absolute;
         width: 0;
         height: 0;
         border-top: none;
-        border-right: 99vw solid #fff;
+        border-right: 100vw solid #fff;
         border-bottom: 10vw solid var(--dark);
     }
 
