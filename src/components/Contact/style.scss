@@ -108,9 +108,15 @@
 
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1000px) {
 
     .contact {
+
+        &--title {
+            padding-top: 3rem;
+            font-size: 2rem;
+        }
+
         &--container {
             padding: 0 5%;
         }
