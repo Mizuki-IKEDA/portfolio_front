@@ -78,14 +78,78 @@
 
     .about {
 
+        &--container {
+            gap: 2rem;
+        }
+
+        &--title {
+            padding-top: 3rem;
+            font-size: 2rem;
+        }
+
         &--words {
-            flex-direction: column;
-            width: 50%;
+            width: 45rem;
+        }
+
+        &--profil {
+            width: 17rem;
         }
 
         &--paragraph {
-            width: 100%;
+            font-size: 1rem;
         }
+    }
+
+}
+
+@media only screen and (max-width: 850px) {
+
+    .about {
+        height: auto;
+        
+        &--container {
+            padding-bottom: 7rem;
+            height: auto;
+        }
+
+        &--words {
+            width: 20rem;
+            flex-direction: column;
+            gap: 2rem;
+        }
+        
+        &--profil {
+            width: 17rem;
+        }
+        
+        &--paragraph {
+            align-items: center;
+            text-align: center;
+            width: 16rem;
+        }
+
+    }
+
+}
+
+@media only screen and (max-width: 450px) {
+
+    .about {
+
+        &--words {
+            width: 16rem;
+        }
+        
+        &--profil {
+            width: 14rem;
+        }
+        
+        &--paragraph {
+            align-items: center;
+            text-align: center;
+            width: 13rem;
+        }
+
     }
 
 }
