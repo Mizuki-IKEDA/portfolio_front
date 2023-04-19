@@ -116,7 +116,6 @@
         justify-content: center;
         align-items: center;
         gap: 1rem;
-        font-size: 1.7rem;
         z-index: 2;
     }
     
@@ -163,7 +162,7 @@
     .menu {
         
         &-container {
-            padding: 1em 2.5em;
+            padding: 1em 1em;
         }
 
         &-square {
@@ -200,6 +199,12 @@
             font-size: 1rem;
         }
 
+        &-languages {
+            gap: 0.5rem;
+        }
+        &-language {
+            font-size: 1rem;
+        }
     }
 
 }
