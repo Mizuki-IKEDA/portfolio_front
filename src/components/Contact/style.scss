@@ -108,6 +108,16 @@
 
 }
 
+@media only screen and (max-width: 1200px) {
+    .contact {
+        &--form {
+            &-submit {
+                width: 40%;
+            }
+        }
+    }
+}
+
 @media only screen and (max-width: 1000px) {
 
     .contact {
@@ -118,7 +128,39 @@
         }
 
         &--container {
-            padding: 0 5%;
+            height: auto;
+            width: 55%;
+        }
+
+        &--description {
+            font-size: 1rem;
+        }
+
+        &--form {
+            width: 100%;
+
+            &-container {
+                text-align: center;
+            }
+
+            &-input {
+                font-size: 1rem;
+
+                &::placeholder {
+                    font-size: 1rem;
+                }
+            }
+
+            &-textarea {
+                &::placeholder {
+                    font-size: 1rem;
+                }
+            }
+
+            &-submit {
+                width: 60%;
+                font-size: 1rem;
+            }
         }
     }
 }

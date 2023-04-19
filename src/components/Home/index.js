@@ -5,11 +5,6 @@ import PropTypes from 'prop-types';
 function Home({language}) {
     return (
         <div className="home" id="home">
-              {/* <div class="elements">
-                    <div class="square sq1"></div>
-                    <div class="square sq2"></div>
-                    <div class="square sq3"></div>
-                </div>  */}
             {language === 'en' ? 
                 <>
                     <div className="home--container">
