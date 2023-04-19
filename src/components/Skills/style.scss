@@ -111,6 +111,11 @@
 
     .skills {
         height: auto;
+        padding-bottom: 7rem;
+        &-container {
+            height: auto;
+        }
+
         &-title {
             padding-top: 3rem;
             font-size: 2rem;

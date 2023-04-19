@@ -36,7 +36,7 @@ function Contact({language}) {
                 <h1 ref={contactRef} className={`${'contact--title'} ${contactIsVisible ? 'animateFadein' : ''}`}>CONTACT</h1>
                 <div ref={contactRef} className={`${'contact--form-container'} ${contactIsVisible ? 'animateFadeinDelay' : ''}`}>
                     <p ref={contactRef} className={`${'contact--description'} ${contactIsVisible ? 'animateFadein' : ''}`}>
-                        Whether you have a question or just want to say Hi, don't hesitate to contact me !
+                        Whether you have a question or just want to say hi, please don't hesitate !
                     </p>
                     <form className="contact--form" onSubmit={handleSubmit}>
                         <input

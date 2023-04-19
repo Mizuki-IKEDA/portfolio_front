@@ -2,7 +2,7 @@
     position: fixed;
     bottom: 7rem;
     right: 1.9rem;
-    width: 5rem;
+    width: 4rem;
     padding: 10rem 0rem;
     border-radius: 3rem;
     box-shadow: 0 0 7px var(--aquablue);
@@ -38,12 +38,12 @@
 @media only screen and (max-width: 1000px) {
 
     .mail {
-        right: 1rem;
-        width: 3rem;
-        padding: 7rem 0rem;
+        right: 0.8rem;
+        width: 1.5rem;
+        padding: 5rem 0rem;
 
         &--container {
-            font-size: 1rem;
+            font-size: 0.8rem;
         }
     }
 }

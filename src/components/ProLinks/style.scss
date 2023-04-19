@@ -41,14 +41,14 @@
 
 @media only screen and (max-width: 1000px) {
     .prolinks {
-        left: 1rem;
-        padding: 1.2rem 0.8rem;
+        left: 0.8rem;
+        padding: 1.2rem 0.3rem;
 
         &--container {
-            gap: 1rem;
+            gap: 1.5rem;
         }
         &--logo {
-            width: 20px;
+            width: 17px;
         }
     }
 }
