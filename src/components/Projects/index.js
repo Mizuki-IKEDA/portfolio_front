@@ -11,6 +11,7 @@ function Projects({ projects, language }) {
         <div className="projects" id="projects">
             <div className="projects--separator"></div>
             <div className="projects--container">
+                {/* <div className="projects--developping">Ongoing</div> */}
                 <h1 ref={projectsRef} className={`${'projects--title'} ${projectsIsVisible ? 'animateFadein' : ''}`}>{language === 'en' ? 'PROJECTS' : 'PROJETS'}</h1>
                 {projects && (
                     <section ref={projectsRef} className={`${'projects--projects'} ${projectsIsVisible ? 'animateFadeinDelay' : ''}`}>

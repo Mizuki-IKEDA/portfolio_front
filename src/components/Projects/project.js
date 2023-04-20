@@ -9,6 +9,7 @@ function Project({
     description,
     technology,
     link,
+    github_link,
 }) {
     return (
         <div className="project">
@@ -19,7 +20,7 @@ function Project({
                     <p className="project-description">{description}</p>
                     <p className="project-technology">{technology}</p>
                     <div className="project-links">
-                        <a href="https://github.com/O-clock-Flamel/projet-07-tinder-du-sportif-front" target="_blank">
+                        <a href={github_link} target="_blank">
                             <img className="project-links--img" src="/images/logo_github.png" alt="link-github" />
                         </a>
                         <a href={link} target="_blank">
@@ -41,6 +42,7 @@ Project.propTypes = {
     description: PropTypes.string.isRequired,
     technology: PropTypes.string.isRequired,
     link: PropTypes.string.isRequired,
+    github_link: PropTypes.string.isRequired,
     done: PropTypes.bool.isRequired,
     language: PropTypes.string.isRequired,
 };
