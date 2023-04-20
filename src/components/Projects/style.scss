@@ -13,6 +13,19 @@
         border-bottom: 10vw solid var(--dark);
     }
 
+    &--developping {
+        position: absolute;
+        color: red;
+        // top: 78%;
+        // left: 62%;
+        z-index: 2;
+        font-weight: bold;
+        font-size: 1.5rem;
+        border: 3px solid red;
+        padding: 1rem;
+        background-color: #fff;
+    }
+
     &--container {
         padding: 15% 15% 10%;
         display: flex;
@@ -27,6 +40,7 @@
         color: var(--aquablue);
         z-index: 1;
         opacity: 0;
+
     }
 
     &--projects {
@@ -72,6 +86,7 @@
     
     &-title {
         font-size: 1.5rem;
+        text-align: center;
     }
 
     &-subtitle {
