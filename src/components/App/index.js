@@ -30,8 +30,8 @@ function App() {
   return (
         <div className="app">
           <Menu language={language} />
-          <ProLinks />
-          <Mail />
+          {/* <ProLinks />
+          <Mail /> */}
           <Home language={language} />
           <Skills language={language} />
           <Projects projects={projects} language={language} />
