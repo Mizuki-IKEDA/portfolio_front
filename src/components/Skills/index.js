@@ -43,7 +43,7 @@ function Skills({language}) {
   return (
     <div className="skills">
       <div className="skills-container">
-        <h1 ref={aboutRef} className={`${"skills-title"} ${aboutIsVisible ? "animateFadein" : ""}`}>{language === 'en' ? 'SKILLS' : 'COMPETENCES'}</h1>
+        <h1 ref={aboutRef} className={`${"skills-title"} ${aboutIsVisible ? "animateFadein" : ""}`}>{language === 'en' ? 'SKILLS' : 'COMPETENCES'}<span className='aquablue'>.</span></h1>
         <ul className="skills-topics">
           <li className="skills-topic">
             <div ref={aboutRef} id="front" className={`${"skills-topic--title"} ${aboutIsVisible ? "animateFadein" : ""}`} onClick={handleClickFront} style={{animationDelay: "0.05s"}}>FRONT</div>

@@ -11,7 +11,7 @@ function About({language}) {
             <div className="about--separator"></div>
             {language === 'en' ? 
                 <div className="about--container">
-                    <h1 ref={aboutRef} className={`${'about--title'} ${aboutIsVisible ? 'animateFadein' : ''}`}>ABOUT</h1>
+                    <h1 ref={aboutRef} className={`${'about--title'} ${aboutIsVisible ? 'animateFadein' : ''}`}>ABOUT<span className='aquablue'>.</span></h1>
                     <div className="about--words">
                         <img ref={aboutRef} className={`${'about--profil'} ${aboutIsVisible ? 'animateFadein' : ''}`} src="/images/photo_profil.jpg" alt="profil" />
                         <div ref={aboutRef} className={`${'about--paragraph'} ${aboutIsVisible ? 'animateFadeinDelay' : ''}`}>
@@ -23,7 +23,7 @@ function About({language}) {
                     </div>
                 </div> :
                 <div className="about--container">
-                    <h1 ref={aboutRef} className={`${'about--title'} ${aboutIsVisible ? 'animateFadein' : ''}`}>A propos</h1>
+                    <h1 ref={aboutRef} className={`${'about--title'} ${aboutIsVisible ? 'animateFadein' : ''}`}>A PROPOS<span className='aquablue'>.</span></h1>
                     <div className="about--words">
                         <div ref={aboutRef} className={`${'about--paragraph'} ${aboutIsVisible ? 'animateFadeinDelay' : ''}`}>
                             <p>Après 10 ans en tant qu'ingénieur projet en industrie, je me suis reconverti dans le développement web en me formant chez O'Clock.</p>

@@ -24,31 +24,34 @@ function Menu({language}) {
                 <ul className={`menu-links ${showNavbar && 'menu-active'}`}>
                     <li>
                         <Link className="menu-link" activeClass="active" duration={400} smooth={true} spy={true} to="home">
-                            {language === 'en' ? 'HOME' : 'ACCUEIL'}
+                            {language === 'en' ? 'HOME' : 'ACCUEIL'}<span className='aquablue'>.</span>
                         </Link>
                     </li>
                     <li>
                         <Link className="menu-link" activeClass="active" duration={400} smooth={true} spy={true} to="skills">
-                            {language === 'en' ? 'SKILLS' : 'COMPETENCES'}
+                            {language === 'en' ? 'SKILLS' : 'COMPETENCES'}<span className='aquablue'>.</span>
                         </Link>
                     </li>
                     <li>
                         <Link className="menu-link" activeClass="active" duration={400} smooth={true} spy={true} to="projects">
-                            {language === 'en' ? 'PROJECTS' : 'PROJETS'}
+                            {language === 'en' ? 'PROJECTS' : 'PROJETS'}<span className='aquablue'>.</span>
                         </Link>
                     </li>
                     <li>
                         <Link className="menu-link" activeClass="active" duration={400} smooth={true} spy={true} to="about">
-                            {language === 'en' ? 'ABOUT' : 'A PROPOS'}
+                            {language === 'en' ? 'ABOUT' : 'A PROPOS'}<span className='aquablue'>.</span>
                         </Link>
                     </li>
                     <li>
                         <Link className="menu-link" activeClass="active" duration={400} smooth={true} spy={true} to="contact">
-                            CONTACT
+                            CONTACT<span className='aquablue'>.</span>
                         </Link>
                     </li>
                 </ul>
                 <div className='menu-languages'>
+                    <a href="/documents/CV_IKEDA_fr.pdf" className="menu-cv" target="_blank">
+                        {language === 'en' ? 'MY RESUME' : 'MON CV'}<span className='white'>.</span>
+                    </a>
                     <Link onClick={() => dispatch(toggleLanguage())} className={language==='en' ? 'menu-language menu-language--chosen' : 'menu-language'}>
                         EN
                     </Link>
