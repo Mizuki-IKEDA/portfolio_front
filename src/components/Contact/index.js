@@ -34,7 +34,7 @@ function Contact({language}) {
             <div className="contact--separator"></div>
             {language === 'en' ? 
             <div className="contact--container">
-                <h1 ref={contactRef} className={`${'contact--title'} ${contactIsVisible ? 'animateFadein' : ''}`}>CONTACT</h1>
+                <h1 ref={contactRef} className={`${'contact--title'} ${contactIsVisible ? 'animateFadein' : ''}`}>CONTACT<span className='aquablue'>.</span></h1>
                 <div ref={contactRef} className={`${'contact--form-container'} ${contactIsVisible ? 'animateFadeinDelay' : ''}`}>
                     <p ref={contactRef} className={`${'contact--description'} ${contactIsVisible ? 'animateFadein' : ''}`}>
                         Whether you have a question or just want to say hi, please don't hesitate !
@@ -70,7 +70,7 @@ function Contact({language}) {
                 </div>
             </div> :
             <div className="contact--container">
-                <h1 ref={contactRef} className={`${'contact--title'} ${contactIsVisible ? 'animateFadein' : ''}`}>CONTACT</h1>
+                <h1 ref={contactRef} className={`${'contact--title'} ${contactIsVisible ? 'animateFadein' : ''}`}>CONTACT<span className='aquablue'>.</span></h1>
                 <div ref={contactRef} className={`${'contact--form-container'} ${contactIsVisible ? 'animateFadeinDelay' : ''}`}>
                     <p ref={contactRef} className={`${'contact--description'} ${contactIsVisible ? 'animateFadein' : ''}`}>
                         N'hésitez pas à me contacter !

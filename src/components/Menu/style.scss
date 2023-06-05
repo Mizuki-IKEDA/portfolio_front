@@ -104,6 +104,29 @@
         }
     }
 
+    &-cv {
+        text-decoration: none;
+        color: white;
+        color: var(--aquablue);
+        border: 2px solid var(--aquablue);
+        border-radius: 5px;
+        box-shadow: 0 0 10px var(--aquablue);
+        margin-right: 1rem;
+        padding: 0.5rem;
+        width: 7rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+        font-weight: bold;
+        
+        &:hover {
+            transition: 0.5s ease;
+            background-color: var(--aquablue);
+            color: #ffffff;
+        }
+    }
+
     &-languages {
         animation: slidedown 1s ease;
         animation-delay: 1s;
@@ -141,6 +164,10 @@
         }
     }
 
+}
+
+.aquablue {
+    color: var(--aquablue);
 }
 
 @media only screen and (max-width: 1200px) {
@@ -197,6 +224,11 @@
         
         &-link {
             font-size: 1rem;
+        }
+
+        &-cv {
+            margin-right: 0.5rem;
+            font-size: 0.8rem;
         }
 
         &-languages {

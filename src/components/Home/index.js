@@ -21,10 +21,10 @@ function Home({language}) {
                         </p>
                         <div className="home--links">
                             <Link activeClass="active" duration={400} smooth={true} spy={true} to="contact">
-                                <span className="home--discover">Contact me</span>
+                                <span className="home--discover">Contact me<span className='white'>.</span></span>
                             </Link>
                             <Link activeClass="active" duration={400} smooth={true} spy={true} to="projects">
-                                <span className="home--cv">Check my work</span>
+                                <span className="home--cv">Check my work<span className='white'>.</span></span>
                             </Link>
                         </div>
                         <Link activeClass="active" duration={400} smooth={true} spy={true} to="skills">
@@ -50,10 +50,10 @@ function Home({language}) {
                         </p>
                         <div className="home--links" >
                             <Link activeClass="active" duration={400} smooth={true} spy={true} to="contact">
-                                <span className="home--discover">Contactez moi</span>
+                                <span className="home--discover">Contactez moi<span className='white'>.</span></span>
                             </Link>
                             <Link activeClass="active" duration={400} smooth={true} spy={true} to="projects">
-                                <span className="home--cv">Mes projets</span>
+                                <span className="home--cv">Mes projets<span className='white'>.</span></span>
                             </Link>
                             {/* <a href="/documents/CV_Mizuki_IKEDA_en.pdf" className="home--cv" target="_blank">Mon CV</a> */}
                         </div>
