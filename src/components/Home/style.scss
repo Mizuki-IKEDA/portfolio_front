@@ -114,6 +114,9 @@
         align-items: center;
         gap: 3rem;
         padding-top: 0.4rem;
+        animation: home 0.75s ease-out;
+        animation-delay: 1.6s;
+        animation-fill-mode: forwards;
     }
 
     &-prologo {
