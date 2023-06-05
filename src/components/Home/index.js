@@ -27,6 +27,17 @@ function Home({language}) {
                                 <span className="home--cv">Check my work<span className='white'>.</span></span>
                             </Link>
                         </div>
+                        <div className="home-prolinks">
+                            <a className="home-prolink" href="https://www.linkedin.com/in/mizukiikeda/" target="_blank">
+                                <img className="home-prologo" src="/images/logo_linkedin.png" alt="logo_linkedin" />
+                            </a>
+                            <a className="home-prolink" href="https://github.com/Mizuki-IKEDA" target="_blank">
+                                <img className="home-prologo" src="/images/logo_github.png" alt="logo_github" />
+                            </a>  
+                            <a className="home-prolink" href="mailto:">
+                                <img className="home-prologo" src="/images/logo_mail.png" alt="logo_mail" />
+                            </a>  
+                        </div>                       
                         <Link activeClass="active" duration={400} smooth={true} spy={true} to="skills">
                             <img className="home--downarrow" src="/images/down_arrow_3.png" alt="down_arrow" />
                         </Link>
@@ -55,7 +66,6 @@ function Home({language}) {
                             <Link activeClass="active" duration={400} smooth={true} spy={true} to="projects">
                                 <span className="home--cv">Mes projets<span className='white'>.</span></span>
                             </Link>
-                            {/* <a href="/documents/CV_Mizuki_IKEDA_en.pdf" className="home--cv" target="_blank">Mon CV</a> */}
                         </div>
                         <Link activeClass="active" duration={400} smooth={true} spy={true} to="about">
                             <img className="home--downarrow" src="/images/down_arrow_3.png" alt="down_arrow" />
