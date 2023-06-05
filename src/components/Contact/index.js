@@ -104,8 +104,24 @@ function Contact({language}) {
                         </div>
                     </form>
                 </div>
-        </div>
+            </div>
             }
+            <div className='contact--footer'>
+                <div className="contact--footer-links">
+                    <a className="contact--footer-link" href="https://www.linkedin.com/in/mizukiikeda/" target="_blank">
+                        <img className="contact--footer-logo" src="/images/logo_linkedin.png" alt="logo_linkedin" />
+                    </a>
+                    <a className="contact--footer-link" href="https://github.com/Mizuki-IKEDA" target="_blank">
+                        <img className="contact--footer-logo" src="/images/logo_github.png" alt="logo_github" />
+                    </a>  
+                    <a className="contact--footer-link" href="mailto:">
+                        <img className="contact--footer-logo" src="/images/logo_mail.png" alt="logo_mail" />
+                    </a>  
+                </div>
+                <p>
+                    Designed and Build by<span className='contact--footer-name'> Mizuki Ikeda</span>
+                </p>
+            </div>
         </div>
     )
 }

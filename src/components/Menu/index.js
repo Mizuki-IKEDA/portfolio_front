@@ -11,7 +11,6 @@ function Menu({language}) {
     const handleShowNavbar = () => {
         setShowNavbar(!showNavbar);
     };
-    console.log(showNavbar);
 
     return (
         <nav className="menu">
