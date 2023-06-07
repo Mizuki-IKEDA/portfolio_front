@@ -31,7 +31,16 @@ function Projects({ projects, language }) {
                             link="https://keepup-oclock.netlify.app/"
                             github_link="https://github.com/O-clock-Flamel/projet-07-tinder-du-sportif-front"
                         />
-                        <div className="project">
+                        <Project
+                            thumbnail="/images/photo_leCookNippon.png"
+                            title="leCookNippon"
+                            subtitle="Japanese cooking site"
+                            description="A website presenting family friendly japanese cooking recipes."
+                            technology="Wordpress"
+                            link="https://minkoro3.wordpress.com/"
+                            github_link=""
+                        />
+                        {/* <div className="project">
                             <img src="/images/photo_leCookNippon.png" className="project-image" alt="TheNipponCook" />
                             <div className="project-text">
                                 <h3 className="project-title">"TheNipponCook"</h3>
@@ -48,7 +57,7 @@ function Projects({ projects, language }) {
                                     </a>
                                 </div>
                             </div>
-                    </div>
+                        </div> */}
                     </section>
                 )}
             </div>
